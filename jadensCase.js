@@ -38,12 +38,21 @@ String.prototype.toJadenCase = function() {
 	return jadenCase;
 };
 
+// String.prototype.toJadenCase = function() {
+// 	return this.split(' ')
+// 		.map((phrase) => {
+// 			return phrase[0].toUpperCase + phrase.slice(1);
+// 		})
+// 		.join(' ');
+// };
+
 let sentence = "How can mirrors be real if our eyes aren't real";
 
 let sentenceToJadens = sentence.toJadenCase();
 
 console.log(sentenceToJadens);
-
 // split strings at every space
 
 // capitalize each letter after space / the first letter of each word
+
+// join them
